@@ -71,7 +71,7 @@ func run(target string) {
 				must(syscall.PtraceGetRegs(wpid, &regs))
 				filename, line, fn = symTable.PCToLine(regs.Rip)
 				fmt.Printf("Stopped at %s at %d in %s\n", fn.Name, line, filename)
-				outputStack(symTable, wpid, &regs)
+				outputStack(symTable, wpid, regs.Rip, regs.Rsp, regs.Rbp)
 
 				if breakpointSet {
 					replaceCode(wpid, pc, originalCode)
