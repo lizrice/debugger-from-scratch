@@ -6,7 +6,7 @@ Big caveat: it assumes there is only one file in the target!
 
 I fully expect this only to work on Linux. 
 
-This is a more detailed version of the code I wrote in my [Debuggers From Scratch talk at dotGo Paris](https://youtu.be/TBrv17QyUE0).
+This is a more detailed version of the code I wrote in my [Debuggers From Scratch talk at dotGo Paris](https://youtu.be/TBrv17QyUE0). Here are the [slides from that talk](https://speakerdeck.com/lizrice/debuggers-from-scratch).
 
 ## A note on compiling the target executable
 
