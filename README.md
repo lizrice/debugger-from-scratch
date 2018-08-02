@@ -10,4 +10,4 @@ This is a more detailed version of the code I wrote in my [Debuggers From Scratc
 
 ## A note on compiling the target executable
 
-You may find it helpful to compile your target excutable with `gcflags="-N -l"` to turn off compiler optimization and in-lining (otherwise you might find that the symbol table doesn't appear to know about code where you expect it to be!)
+You may find it helpful to compile your target excutable with `--gcflags="all=-N -l"` (`--gcflags="-N -l"` in Go 1.9 and earlier) to turn off compiler optimization and in-lining (otherwise you might find that the symbol table doesn't appear to know about code where you expect it to be!)
